@@ -25,12 +25,18 @@ const config = {
 };
 
 class Fibril {
+  #id;
+
   constructor(label='Unnamed Fibril', space='') {
-    this.id        = genNextID();
+    this.#id       = genNextID();
     this.label     = label;
     this.resonance = config.startingResonance
     this.space     = space;
     return this;
+  }
+
+  id() {
+    return this.#id;
   }
 
   // Hopefully validation will be done wherever the input is derived!
