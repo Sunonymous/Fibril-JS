@@ -1,0 +1,10 @@
+#+TITLE: Fibril (JS)
+#+AUTHOR: Sunny
+#+CREATOR: Emacs
+
+* Overview
+Fibril is an application designed to assist a user in coordinating distributed incremental actions over time. On the surface, it functions like a todo list application. However, its usage and functionality diverge from any task tracker its author has encountered. Its use case is very open and may be used to track a variety of phenomena beyond 'tasks'. Much thought and effort has gone into the design of the application before its inception into actual code.
+* Philosophy
+(This section to be imported and revised from separate documentation)
+* Challenges
+(This section to be imported and revised from separate documentation)
