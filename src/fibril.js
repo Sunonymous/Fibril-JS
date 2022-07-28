@@ -9,12 +9,17 @@
 // resonance - Level of energy/attention the fibril has received. Adjusts upon each interaction.
 // space     - A fibril's space contains notes about the fibril. Editable at will.
 
-let fibrilsCreated = 0; // used to assign IDs
-function genNextID() {
-  const currentID = fibrilsCreated;
-  fibrilsCreated += 1;
-  return currentID;
-}
+const nextID = (function() {
+  let fibrilsCreated = 0; // used to assign IDs
+
+  function genNextID() {
+    const currentID = fibrilsCreated;
+    fibrilsCreated += 1;
+    return currentID;
+  }
+
+  return genNextID;
+})();
 
 // Config contains values which may change used in the program.
 const config = {
@@ -28,7 +33,7 @@ class Fibril {
   #id;
 
   constructor(label='Unnamed Fibril', space='') {
-    this.#id       = genNextID();
+    this.#id       = nextID();
     this.label     = label;
     this.resonance = config.startingResonance
     this.space     = space;
