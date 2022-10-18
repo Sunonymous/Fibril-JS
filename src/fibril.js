@@ -23,9 +23,6 @@ const nextID = (function() {
 
 // Config contains values which may change used in the program.
 const config = {
-  boostDelta: 1,
-  passDelta: -0.5,
-  drainDelta: -1.5,
   startingResonance: 7,
 };
 
@@ -51,22 +48,6 @@ class Fibril {
 
   setSpace(newData) {
     this.space = newData;
-  }
-
-  #adjustResonance(amt) {
-    this.resonance += amt;
-  }
-
-  boost() {
-    this.#adjustResonance(config.boostDelta);
-  }
-
-  pass() {
-    this.#adjustResonance(config.passDelta);
-  }
-
-  drain() {
-    this.#adjustResonance(config.drainDelta);
   }
 }
 

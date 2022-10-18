@@ -42,27 +42,6 @@ test('fibril can be renamed', () => {
   expect(fibril.label).toBe('Beautiful');
 });
 
-test('a fibril\'s resonance may be boosted', () => {
-  const fibril = new F.Fibril('Test');
-  const initialResonance = fibril.resonance;
-  fibril.boost();
-  expect(fibril.resonance).toBeGreaterThan(initialResonance);
-});
-
-test('a fibril\'s resonance may be passed', () => {
-  const fibril = new F.Fibril('Test');
-  const initialResonance = fibril.resonance;
-  fibril.pass();
-  expect(fibril.resonance).toBeLessThan(initialResonance);
-});
-
-test('a fibril\'s resonance may be drained', () => {
-  const fibril = new F.Fibril('Test');
-  const initialResonance = fibril.resonance;
-  fibril.drain();
-  expect(fibril.resonance).toBeLessThan(initialResonance);
-});
-
 test('a fibril\'s space may be changed', () => {
   const fibril = new F.Fibril('Test');
   const string = '1, 2, 3, a happy family!';
