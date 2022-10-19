@@ -6,6 +6,7 @@
     "inquirer": "^9.0.2"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "cover": "jest --coverage"
   }
 }
