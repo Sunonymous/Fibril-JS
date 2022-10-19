@@ -4,7 +4,12 @@
 
 * Overview
 Fibril is an application designed to assist a user in coordinating distributed incremental actions over time. On the surface, it functions like a todo list application. However, its usage and functionality diverge from any task tracker its author has encountered. Its use case is very open and may be used to track a variety of phenomena beyond 'tasks'. Much thought and effort has gone into the design of the application before its inception into actual code.
+* Terminology
+A *fibril* is a single idea, task, topic, or inspiration.
+Multiple fibrils are contained in a *weave*.
+Fibrils may be complex tasks, though they should always have an *idoa*. An idoa is an incremental "next step" that is actionable and reasonably small. This makes idoas distinct from ideas, which can live more within the mind.
 * Philosophy
-(This section to be imported and revised from separate documentation)
-* Challenges
-(This section to be imported and revised from separate documentation)
+- A list weave may contain more than one fibril, though they are only shown single file. This is to prevent overloading the working memory and to allow focus on a single subject.
+- Fibrils will contain a space to hold notes and related ideas.
+  - Users are generally encouraged to put the next idoa within the fibril's space, so that it may be resumed very quickly.
+- Fibrils that are not engaged with several times are moved out of sight automatically (this does **not** mean they are deleted!).
